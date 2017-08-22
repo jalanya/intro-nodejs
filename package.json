@@ -1,0 +1,23 @@
+{
+  "name": "intro-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "built-ins.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalanya/intro-nodejs.git"
+  },
+  "author": "Jose Alanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalanya/intro-nodejs/issues"
+  },
+  "homepage": "https://github.com/jalanya/intro-nodejs#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
