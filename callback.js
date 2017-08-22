@@ -16,15 +16,20 @@ const evenDoubler = (v, callback) => {
   }
 };
 
-const handleResults = (err, results, time) => {
-  if (err) {
-    console.log(`ERROR ${err.message}`);
-  } else {
-    console.log(`The results are: ${results} (${time} ms)`);
-  }
-}
+var count = 0;
 
-evenDoubler(2, handleResults);
-evenDoubler(3, handleResults);
-evenDoubler(10, handleResults);
+for (let i = 0; i < 10; i ++) {
+  console.log(`Calling evenDoubler for value: ${i}`);
+  evenDoubler(i, function(err, results, time) {
+    if (err) {
+      console.log(`ERROR ${err.message}`);
+    } else {
+      console.log(`The results are: ${results} (${time} ms)`);
+    }
+    if(++count === 10) {
+      console.log("Done!");
+    }
+  });
+};
+
 console.log("------");
