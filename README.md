@@ -7,7 +7,7 @@
 
 ### Demo: Mocha and Should.js
 
-`./node_modules/.bin/mocha --help`  
-`./node_modules/.bin/mocha mocha.js`
-`./node_modules/.bin/mocha -R spec mocha.js`
-`./node_modules/.bin/mocha -R landing spec mocha.js`
+* `./node_modules/.bin/mocha --help`
+* `./node_modules/.bin/mocha mocha.js`
+* `./node_modules/.bin/mocha -R spec mocha.js`
+* `./node_modules/.bin/mocha -R landing spec mocha.js`
